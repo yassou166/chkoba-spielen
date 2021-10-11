@@ -1,3 +1,4 @@
+alert("wiiiiiiiiii");
 const SUITS = ["♠", "♣", "♥", "♦"]
 const VALUES = [
   "A",
