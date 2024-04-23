@@ -1,0 +1,110 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Yedek{
+    margin: 100px 25px 50px 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card,.Ycard{
+    width: 80px;
+    height: 160px;
+    background-color: #fff;
+    margin: 40px;
+}
+
+img{
+    width: 80px;
+    height: 160px;
+    background-color: #fff;
+}
+
+.popUP{
+    
+    visibility: visible;
+    opacity: 1;
+    
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .4);
+    transition: all .4s;
+}
+
+.ins{
+    background-color: rgb(104, 102, 102);
+    padding: 5% 10%;
+    border: rgb(104, 102, 102) 1px;
+    border-radius: 15%;
+}
+
+.Pcard{
+    display: block;
+    margin: auto auto;
+    width: 150px;
+    height: 300px;
+}
+
+button{
+    padding: 20px;
+    margin: 5px;
+}
+
+.Preview{
+    visibility: visible;
+    opacity: 1;
+    
+    src: url("./Carta/0.0.png");
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    bottom: auto;
+}
+
+.an{
+    animation: habtet 1.5s forwards;
+}
+
+@keyframes habtet {
+    0%{
+        src: url("./Carta/0.0.png");
+        visibility: visible;
+        opacity: 1;    
+        top: 0%;
+        left: 10%;
+    }
+
+    50%{
+        visibility: visible;
+        opacity: 1;    
+        top: 20%;
+        left: 10%;
+    }
+
+    90%{
+        visibility: visible;
+        opacity: 1;    
+        top: -10%;
+        left: 10%;
+    }
+
+    100%{
+        visibility: hidden;
+        opacity: 0;    
+        top: -20%;
+        left: 10%;
+        src: url("./Carta/0.0.png");
+    }
+}
